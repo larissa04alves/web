@@ -58,9 +58,9 @@ export function QuestionForm({ roomId }: QuestionFormProps) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Fazer uma Pergunta</CardTitle>
+        <CardTitle>Ask a Question</CardTitle>
         <CardDescription>
-          Digite sua pergunta abaixo para receber uma resposta gerada por I.A.
+          Type your question below to receive an AI-generated response.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -74,11 +74,11 @@ export function QuestionForm({ roomId }: QuestionFormProps) {
               name="question"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Sua Pergunta</FormLabel>
+                  <FormLabel>Your Question</FormLabel>
                   <FormControl>
                     <Textarea
                       className="min-h-[100px]"
-                      placeholder="O que você gostaria de saber?"
+                      placeholder="What would you like to know?"
                       {...field}
                     />
                   </FormControl>
@@ -88,11 +88,11 @@ export function QuestionForm({ roomId }: QuestionFormProps) {
             />
 
             <Button type="submit">
-              Enviar pergunta
+              Submit Question
             </Button>
 
             {error && (
-              toast("Erro ao enviar pergunta. Tente novamente.")
+              toast("Error submitting question. Please try again.")
             )}
           </form>
         </Form>
