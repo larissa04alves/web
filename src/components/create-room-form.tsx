@@ -29,7 +29,7 @@ export function CreateRoomForm() {
     }
 
     return (
-        <Card>
+        <Card className="w-full">
             <CardHeader>
                 <CardTitle>Create a new room</CardTitle>
                 <CardDescription>

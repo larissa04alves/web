@@ -16,7 +16,7 @@ import { useRooms } from "@/http/use-rooms";
 export function RoomList() {
     const { data, isLoading } = useRooms();
     return (
-        <Card>
+        <Card className="w-full">
             <CardHeader>
                 <CardTitle>Recent rooms</CardTitle>
                 <CardDescription>
